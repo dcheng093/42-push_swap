@@ -115,8 +115,6 @@ void	parse_input(char **av, int *input)
 	nums = NULL;
 	while (av[i])
 	{
-		if (av[i][0] == ' ' || av[i][ft_strlen(av[i]) - 1] == ' ')
-			exit_helper(NULL, EXIT_FAILURE, NULL, NULL);
 		nums = ft_split(av[i], ' ');
 		if (!nums || !nums[0])
 			exit_helper(NULL, EXIT_FAILURE, (void (*)(void *))free_split, nums);
