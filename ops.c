@@ -33,7 +33,7 @@ void	op(t_pushswap *ps, int op_code)
 
 int	ss(t_pushswap *ps)
 {
-	if (ps->size_a < 2 && ps->size_b < 2)
+	if (ps->size_a < 2 || ps->size_b < 2)
 		return (0);
 	sa(ps);
 	sb(ps);
@@ -42,7 +42,7 @@ int	ss(t_pushswap *ps)
 
 int	rr(t_pushswap *ps)
 {
-	if (ps->size_a < 2 && ps->size_b < 2)
+	if (ps->size_a < 2 || ps->size_b < 2)
 		return (0);
 	ra(ps);
 	rb(ps);
@@ -51,7 +51,7 @@ int	rr(t_pushswap *ps)
 
 int	rrr(t_pushswap *ps)
 {
-	if (ps->size_a < 2 && ps->size_b < 2)
+	if (ps->size_a < 2 || ps->size_b < 2)
 		return (0);
 	rra(ps);
 	rrb(ps);
