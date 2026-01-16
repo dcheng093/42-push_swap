@@ -89,7 +89,7 @@ int	main(int ac, char **av)
 	{
 		count = count_numbers(av);
 		if (count == 0)
-			exit_helper(ps, EXIT_SUCCESS, NULL, NULL);
+			exit_helper(ps, EXIT_FAILURE, NULL, NULL);
 		input = ft_calloc(count, sizeof(int));
 		if (!input)
 			exit_helper(ps, EXIT_FAILURE, NULL, NULL);
