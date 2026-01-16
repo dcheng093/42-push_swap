@@ -70,3 +70,15 @@ Run the program with the checker from the resources of the Push_swap project pag
 ### Use of AI
 
 AI was used to help debug my code and adjust it to comply with norminette's style as well as helping me find extra edge cases that resulted in my program seg-faulting.
+
+<img width="1054" height="1864" alt="image" src="https://github.com/user-attachments/assets/1e6bd903-24bc-4cd9-aa46-8a34c96d5403" />
+<img width="3125" height="990" alt="image" src="https://github.com/user-attachments/assets/0827e524-bc5f-4d86-b930-e2017623b801" />
+<img width="3125" height="1830" alt="image" src="https://github.com/user-attachments/assets/69905d36-1757-4aba-8cc2-269748d713a4" />
+<img width="3125" height="1852" alt="image" src="https://github.com/user-attachments/assets/d6c7b1af-0172-4b36-b2a8-3c2bfcfd7e65" />
+<img width="3125" height="1720" alt="image" src="https://github.com/user-attachments/assets/fa99a01e-2803-4ab2-bda5-ce148ccce2db" />
+
+
+<img width="2575" height="1792" alt="image" src="https://github.com/user-attachments/assets/1cd4f750-4cb3-40a5-b6f9-26b4410b36f2" />
+<img width="2575" height="1832" alt="image" src="https://github.com/user-attachments/assets/c48eff65-d398-43d5-8632-039f39c30d35" />
+<img width="2575" height="1362" alt="image" src="https://github.com/user-attachments/assets/ebefa882-398d-4b9e-aa35-0de8a0ea41ca" />
+<img width="2575" height="1820" alt="image" src="https://github.com/user-attachments/assets/53ee5460-a720-4be9-97df-ca8dece12dcd" />
