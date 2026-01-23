@@ -12,28 +12,28 @@
 
 #include "push_swap.h"
 
-void	r_to_top(t_pushswap *ps, const size_t i)
+void	r_to_top(t_pushswap *ps, size_t i)
 {
-	int		a;
-	int		b;
 	size_t	median_a;
 	size_t	median_b;
 
-	a = ps->a[i];
-	b = ps->b[ps->target_a[i]];
+	if (i >= ps->size_a)
+		return;
 	median_a = (ps->size_a + 1) / 2;
-	median_b = (ps->size_b + 1) / 2;
 	if (i < median_a)
-		while (ps->a[0] != a)
+		while (ps->a[0] != ps->a[i])
 			op(ps, ROTATE_A);
 	else
-		while (ps->a[0] != a)
+		while (ps->a[0] != ps->a[i])
 			op(ps, REVERSE_ROTATE_A);
+	if (ps->size_b == 0 || ps->target_a[i] >= ps->size_b)
+		return;
+	median_b = (ps->size_b + 1) / 2;
 	if (ps->target_a[i] < median_b)
-		while (ps->b[0] != b)
+		while (ps->b[0] != ps->b[ps->target_a[i]])
 			op(ps, ROTATE_B);
 	else
-		while (ps->b[0] != b)
+		while (ps->b[0] != ps->b[ps->target_a[i]])
 			op(ps, REVERSE_ROTATE_B);
 }
 
