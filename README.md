@@ -82,3 +82,7 @@ AI was used to help debug my code and adjust it to comply with norminette's styl
 <img width="2575" height="1832" alt="image" src="https://github.com/user-attachments/assets/c48eff65-d398-43d5-8632-039f39c30d35" />
 <img width="2575" height="1362" alt="image" src="https://github.com/user-attachments/assets/ebefa882-398d-4b9e-aa35-0de8a0ea41ca" />
 <img width="2575" height="1820" alt="image" src="https://github.com/user-attachments/assets/53ee5460-a720-4be9-97df-ca8dece12dcd" />
+
+<img width="1497" height="816" alt="image" src="https://github.com/user-attachments/assets/0b848542-9729-414c-94a4-d2d98824b35f" />
+<img width="1498" height="529" alt="image" src="https://github.com/user-attachments/assets/b059f91c-d463-4256-bb15-108d8ceafa6b" />
+
