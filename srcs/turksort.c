@@ -101,6 +101,10 @@ void	sort_stack(t_pushswap *ps)
 
 void	turksort(t_pushswap *ps)
 {
+	if (ps->size_a > 3 && !is_sorted(ps->a, ps->size_a))
+		op(ps, PUSH_B);
+	if (ps->size_a > 3 && !is_sorted(ps->a, ps->size_a))
+		op(ps, PUSH_B);
 	while (ps->size_a > 3 && !is_sorted(ps->a, ps->size_a))
 	{
 		move_cheapest_to_top(ps);

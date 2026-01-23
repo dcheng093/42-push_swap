@@ -25,7 +25,7 @@
 # define ROTATE_ROTATE 9
 # define REVERSE_ROTATE_ROTATE 10
 
-# include "libft/libft.h"
+# include "libft.h"
 
 /*
 ⠀⠀⠀⠀⠀⠀⢀⣤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⢤⣤⣀⣀⡀⠀⠀⠀⠀⠀⠀

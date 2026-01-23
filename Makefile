@@ -12,17 +12,19 @@
 
 NAME = push_swap
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -Iinclude -Ilibft
 LIBFTDIR = libft
 LIBFT = $(LIBFTDIR)/libft.a
-SRC = arg.c arr.c ops_a.c ops_b.c ops.c push_swap.c turksort_cost.c turksort_helpers.c turksort.c 
+INCLUDEDIR = include
+SRCSDIR = srcs
+SRC = $(SRCSDIR)/arg.c $(SRCSDIR)/arr.c $(SRCSDIR)/ops.c $(SRCSDIR)/ops_a.c $(SRCSDIR)/ops_b.c $(SRCSDIR)/push_swap.c $(SRCSDIR)/turksort_cost.c $(SRCSDIR)/turksort_helpers.c $(SRCSDIR)/turksort.c
 OBJS = $(SRC:.c=.o)
 RM = rm -f
 
 all: $(NAME)
 
 $(NAME): $(OBJS) $(LIBFT)
-	$(CC) $(CFLAGS) $(OBJS) -L$(LIBFTDIR) -lft -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJS) -L$(LIBFTDIR) -lft -I$(INCLUDEDIR) -o $(NAME)
 
 $(LIBFT):
 	$(MAKE) -C $(LIBFTDIR)
