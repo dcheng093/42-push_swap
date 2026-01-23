@@ -18,7 +18,7 @@ void	r_to_top(t_pushswap *ps, size_t i)
 	size_t	median_b;
 
 	if (i >= ps->size_a)
-		return;
+		return ;
 	median_a = (ps->size_a + 1) / 2;
 	if (i < median_a)
 		while (ps->a[0] != ps->a[i])
@@ -27,7 +27,7 @@ void	r_to_top(t_pushswap *ps, size_t i)
 		while (ps->a[0] != ps->a[i])
 			op(ps, REVERSE_ROTATE_A);
 	if (ps->size_b == 0 || ps->target_a[i] >= ps->size_b)
-		return;
+		return ;
 	median_b = (ps->size_b + 1) / 2;
 	if (ps->target_a[i] < median_b)
 		while (ps->b[0] != ps->b[ps->target_a[i]])
@@ -42,6 +42,11 @@ static void	rr_to_top(t_pushswap *ps, const size_t i)
 	int	a;
 	int	b;
 
+	if (ps->size_b == 0 || ps->target_a[i] >= ps->size_b)
+	{
+		r_to_top(ps, i);
+		return ;
+	}
 	a = ps->a[i];
 	b = ps->b[ps->target_a[i]];
 	while (ps->a[0] != a && ps->b[0] != b)
@@ -57,6 +62,11 @@ static void	rrr_to_top(t_pushswap *ps, const size_t i)
 	int	a;
 	int	b;
 
+	if (ps->size_b == 0 || ps->target_a[i] >= ps->size_b)
+	{
+		r_to_top(ps, i);
+		return ;
+	}
 	a = ps->a[i];
 	b = ps->b[ps->target_a[i]];
 	while (ps->a[0] != a && ps->b[0] != b)
