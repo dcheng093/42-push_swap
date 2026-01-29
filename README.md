@@ -1,5 +1,9 @@
 *This project has been created as part of the 42 curriculum by dcheng.*
 
+<p align="center">
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW1kdjZwM2h2YXQzZHQ2NGZ1ZDl5aDRncms4d2Rla2UzdHF1dGFrZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/O8dCwBMsKWwtfrcgQs/giphy.gif" alt="cute gif" width="300"/>
+</p>
+
 ---
 
 Table of contents
